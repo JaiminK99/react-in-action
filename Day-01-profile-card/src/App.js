@@ -6,8 +6,9 @@ const App = () => {
       <ProfileCard
         name={"John Doe"}
         title={"developer"}
-        exp={"5 years"}
+        exp={5}
         bio={"Don't give up"}
+        img={"https://randomuser.me/api/portraits/men/75.jpg"}
       />
     </div>
   );

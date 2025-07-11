@@ -13,4 +13,15 @@ function ProfileCard({ name, title, exp, bio }) {
   );
 }
 
+ProfileCard.prototype = {
+  name: Proptype.string.isRequired,
+  title: Proptype.string.isRequired,
+  exp: Proptype.number.isRequired,
+  bio: Proptype.string,
+};
+
+ProfileCard.defaultProps = {
+  bio: "No bio provided",
+};
+
 export default ProfileCard;

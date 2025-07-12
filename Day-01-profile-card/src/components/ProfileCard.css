@@ -1,0 +1,63 @@
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --bg-light: #f9f9f9;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --border: #dee2e6;
+
+  --font-base: "Segoe UI", sans-serif;
+  --font-lg: 1.5rem;
+  --font-md: 1.2rem;
+  --font-sm: 1rem;
+
+  --pad: 1.5rem;
+  --radius: 1rem;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --hover-scale: 1.03;
+}
+
+.profile-card {
+  display: flex;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+  width: 500px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+}
+
+.profile-info p,
+.profile-info h2,
+.profile-info h3 {
+  margin: 4px 0;
+  font-family: var(--font-base);
+}
+
+.profile-name {
+  font-size: var(--font-lg);
+  font-weight: bold;
+}
+
+.profile-title {
+  font-size: var(--font-md);
+}
+
+.profile-info p {
+  font-size: var(--font-sm);
+}
